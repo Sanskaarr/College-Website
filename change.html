@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Password</title>
+    <link rel="stylesheet" href="newpass.css">
+    <script src="change.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="title">Change Password</div>
+        <div class="content">
+            <form action="change.php" method="post">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Username</span>
+                        <input type="text" name="user" id="user" placeholder="Enter your Username">
+                        </div> 
+                        <div class="input-box">
+                        <span class="details">New Password</span>
+                        <input type="password" name="newp" id="newp" placeholder="Enter New Password">
+                        </div>
+                        <div class="input-box">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" name="newcp" id="newcp" placeholder="Cofirm Your Password">
+                        </div>      
+                </div>
+        <div class="button">
+            <input type="submit" value="Submit" onclick="return change();">
+        </div>
+        </div>
+    </div>
+  </form>  
+</body>
+</html>

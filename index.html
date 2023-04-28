@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harvard College</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="front.css">
+  <script src="front.js"></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <marquee style="background-color:black; color: antiquewhite;">Admission Open 2022</marquee>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo.jpg" width="40px">Harvard College</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="g.html">Gallery</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bca.html">BCA</a></li>
+              <li><a class="dropdown-item" href="mca.html">MCA</a></li>
+              <li><a class="dropdown-item" href="b.ed.html">B.ED</a></li>
+              <li><a class="dropdown-item" href="bcom.html">B.Com (Hons)</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" onclick="openform();">Enquire Now</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Carousel -->
+  <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="1400">
+        <img src="img/image1.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item" data-bs-interval="1400">
+        <img src="img/image2.jpeg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/image4.jpeg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Enquiry Form -->
+  <div class="container">
+    <form action="enquire.php" name="form" id="form" method="post" style="display: none;">
+      <h5>
+        <center><b>Enquire Now</b></center>
+      </h5>
+
+      <label for="fname"><b>First Name</b></label>
+      <input type="text" id="fname" name="fname" placeholder="Your name..">
+
+      <label for="lname"><b>Last Name</b></label>
+      <input type="text" id="lname" name="lname" placeholder="Your last name..">
+
+      <label for="phone"><b>Phone Number</b></label>
+      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number..">
+
+      <label for="email"><b>Email Address</b></label>
+      <input type="email" id="email" name="email" placeholder="Your Email Address..">
+
+      <label for="Courses"><b>Courses</b></label>
+      <select id="courses" name="courses">
+        <option value="BCA">BCA</option>
+        <option value="B.ED">B.ED</option>
+        <option value="MCA">MCA</option>
+        <option value="B.Com(Hons)">B.Com(Hons)</option>
+      </select>
+
+      <label for="message"><b>Message</b></label>
+      <textarea id="message" name="message" placeholder="Write something.." style="height:90px"></textarea>
+
+      <input type="submit" value="Submit">
+      <input type="button" class="btn-cancel" onclick="closeform();" value="Close">
+
+    </form>
+  </div>
+
+  <!-- Course     -->
+  <section class="course">
+    <h1>About Us</h1>
+    <p>At Harvard we are passionate about grooming leaders who are not only thorough professionals but also good human
+      beings with values and sanskars. <br>
+      We benchmark only against the best institutions around the world. Our faculty and senior team travel all over the
+      globe to learn and imbibe the best practices so that we can give a solid foundation for learning. <br><br>
+      As part of this endeavour, we have air-conditioned amphitheatre style classrooms that provide the most conducive
+      atmosphere for dynamic and focused discussions, while the libraries at our campus are equipped with over 1,00,000
+      books, periodicals, national and international journals, CD-ROMS, covering all aspects of academic studies and
+      research material. The hi-tech labs act as ideal training grounds for budding professionals that allow students to
+      experiment and bring to practice what they have learnt in theory. <br><br></p>
+    <h1>Course We Offered</h1>
+    <div class="row">
+      <div class="course-col">
+        <h3>Diploma</h3>
+        <p><b> Web Development <br>
+            Graphics Designing <br>
+            IOS Development</b></p>
+      </div>
+      <div class="course-col">
+        <h3>Degree</h3>
+        <p>BCA <br>B.ED <br>B.Com(Hons)</p>
+      </div>
+      <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>MBA <br> M.Arch <br> MCA</p>
+      </div>
+    </div>
+  </section>
+  <!-- ----- campus -------->
+  <section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>
+      Harvard College is committed to providing intellectual learning spaces, both physical and virtual, to prepare its
+      students for the world ahead of them. We are constantly reviewing and investing in our learning spaces and our
+      infrastructure for students. The exuberant 60 acre campus is not a backdrop but rather a foreground of the future
+      for the students.
+    </p>
+    <div class="row">
+      <div class="campus-col">
+        <img src="img/image1.jpeg">
+        <div class="layer">
+          <h6>LONDON</h6>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="img/Newyork.png">
+        <div class="layer">
+          <h6>Newyork</h6>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="img/Washington.png">
+        <div class="layer">
+          <h6>Washington</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="facilities">
+    <h1>Our facilities</h1>
+
+    <div class="faciliries-col">
+      <img src="img/library.png">
+      <h3>Class Library</h3>
+
+    </div>
+    <div class="faciliries-col">
+      <img src="img/basketball.png">
+      <h3>Largest Play Ground</h3>
+    </div>
+    <div class="faciliries-col">
+      <img src="img/cafeteria.png">
+      <h3>Tasty and Healthy Food</h3>
+    </div>
+  </section>
+
+
+
+  <!-- JavaScript for Toggle Menu -->
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLink.style.right = "0";
+    }
+    function hideMenu() {
+      navLink.style.right = "- 200px";
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

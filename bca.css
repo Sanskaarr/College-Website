@@ -1,0 +1,25 @@
+ul li a{
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li:hover{
+    background-color:burlywood;
+    color: #fff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.text-top {
+    margin-left: 10%;
+}
+div .text-top b{
+    margin-left: 10%;
+}
+div .text-top b,font{
+    margin-left: 10%;
+}
